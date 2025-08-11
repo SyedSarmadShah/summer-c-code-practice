@@ -19,13 +19,13 @@ int main()
 
     for (i=n ; i>=1 ;i--) 
     {
-       if(j>1)
+       if(j>=1)
        {
         arr2[j]=arr1[i];
         j--;
        }
        else{
-        arr2[j]=arr1[i];
+        arr2[n]=arr1[i];
        }
     }
 

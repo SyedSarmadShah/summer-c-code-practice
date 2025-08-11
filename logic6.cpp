@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-int i,j,t=1,k,n,a[100],b[100], num=1;
+int i,j,t=1,k,n,a[100],b, num=0 , check=1;
 
 cout<<"Enter the number of elements: ";
 cin>>n;
@@ -15,17 +15,21 @@ for(i=0;i<n;i++)
 for(j=0;j<n;j++)
 {
     num++;
+    if (check==1)
+    {
+          
     if(a[j]!=num)
     {
-        b[t]=num;
-        t++;
+        b=num;
+        check=0;
     }
+    }
+  
 }
 
-cout<<"The missing elements are: ";
-for(k=0;k<t;k++)
-{
-cout<<b[k]<<" ";
-}
+cout<<"The missing elements ise: ";
+cout<<b;
 
+
+return 0;
 }
